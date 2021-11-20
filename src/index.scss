@@ -1,0 +1,11 @@
+@import './global/global.scss';
+@import './global/apple.scss';
+
+* {
+	margin: 0px;
+	padding: 0px;
+
+	user-select: none;
+
+	font-family: 'AppleSDGothicNeo', sans-serif;
+}

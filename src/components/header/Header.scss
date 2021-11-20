@@ -1,0 +1,59 @@
+header {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 15px 50px;
+
+	// background: linear-gradient(to right, #0575e6, #021b79);
+	border-bottom: 1px solid gainsboro;
+	box-shadow: 0px 2px 15px gainsboro;
+
+	& > div {
+		display: flex;
+
+		gap: 20px;
+	}
+
+	& > .info {
+		& > img {
+			width: 30px;
+		}
+
+		& > h1 {
+			// color: white;
+			font-size: 24px;
+		}
+	}
+
+	& > .menu {
+		a {
+			text-decoration: none;
+			align-self: center;
+
+			$time: 0.3s;
+
+			& > button {
+				background: transparent;
+				border: transparent;
+
+				font-size: 14px;
+
+				transition: $time;
+
+				& > svg {
+					$size: 20px;
+
+					width: $size;
+					height: $size;
+				}
+			}
+
+			&:hover {
+				& > button {
+					color: dodgerblue;
+					transition: $time;
+				}
+			}
+		}
+	}
+}
