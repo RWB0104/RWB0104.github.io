@@ -7,8 +7,10 @@
 
 import { mdiInformation, mdiMicrosoftVisualStudioCode } from '@mdi/js';
 import Icon from '@mdi/react';
-import { ReactElement } from 'react';
+import { ReactElement, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useRecoilState } from 'recoil';
+import { topAtom } from '../../global/state';
 import './Header.scss';
 
 /**
@@ -18,8 +20,10 @@ import './Header.scss';
  */
 export default function Header(): ReactElement
 {
+	const [ topState, setTopState ] = useRecoilState(topAtom);
+
 	return (
-		<header>
+		<header data-top={topState} onLoad={() => setTopState(window.scrollY === 0)}>
 			<div className="info">
 				<img alt="logo" src="/logo.png" />
 				<h1>𝝅번째 알파카의 와장창창 개발 연구소</h1>
@@ -28,13 +32,15 @@ export default function Header(): ReactElement
 			<div className="menu">
 				<Link to="/">
 					<button className="icon-button">
-						<Icon path={mdiInformation} /> <p>About</p>
+						<Icon path={mdiInformation} />
+						<p>About</p>
 					</button>
 				</Link>
 
 				<Link to="/projects/">
 					<button className="icon-button">
-						<Icon path={mdiMicrosoftVisualStudioCode} /> <p>Projects</p>
+						<Icon path={mdiMicrosoftVisualStudioCode} />
+						<p>Projects</p>
 					</button>
 				</Link>
 			</div>

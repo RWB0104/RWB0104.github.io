@@ -6,6 +6,7 @@
  */
 
 import { ReactElement } from 'react';
+import Screener from '../components/common/Screener';
 
 /**
  * 홈 컴포넌트 ReactElement 반환 메서드
@@ -16,7 +17,7 @@ export default function Home(): ReactElement
 {
 	return (
 		<section data-section="home">
-
+			<Screener />
 		</section>
 	);
 }

@@ -1,12 +1,17 @@
 header {
+	$time: 0.3s;
+
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
 
+	width: 100%;
 	padding: 15px 50px;
+	box-sizing: border-box;
 
-	// background: linear-gradient(to right, #0575e6, #021b79);
-	border-bottom: 1px solid gainsboro;
-	box-shadow: 0px 2px 15px gainsboro;
+	z-index: 100;
+
+	transition: $time;
 
 	& > div {
 		display: flex;
@@ -20,7 +25,6 @@ header {
 		}
 
 		& > h1 {
-			// color: white;
 			font-size: 24px;
 		}
 	}
@@ -29,8 +33,6 @@ header {
 		a {
 			text-decoration: none;
 			align-self: center;
-
-			$time: 0.3s;
 
 			& > button {
 				background: transparent;
@@ -50,8 +52,82 @@ header {
 
 			&:hover {
 				& > button {
-					color: dodgerblue;
+					color: dodgerblue !important;
 					transition: $time;
+				}
+			}
+		}
+	}
+
+	&[data-top=true] {
+		border-bottom: 1px solid rgb(255, 255, 255, 0.6);
+
+		& > .info {
+			& > h1 {
+				color: white;
+			}
+		}
+
+		& > .menu {
+			a {
+				& > button {
+					color: white;
+				}
+			}
+		}
+	}
+
+	&[data-top=false] {
+		background-color: white;
+		border-bottom: 1px solid gainsboro;
+		box-shadow: 0px 2px 15px gainsboro;
+
+		& > .info {
+			& > h1 {
+				color: initial;
+			}
+		}
+
+		& > .menu {
+			a {
+				& > button {
+					color: black;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	header {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+
+		padding: 15px;
+
+		& > .info {
+			& > img {
+				width: 24px;
+			}
+
+			& > h1 {
+				font-size: 16px;
+			}
+		}
+
+		& > .menu {
+			a {
+				& > button {
+					font-size: 12px;
+
+					& > svg {
+						$size: 16px;
+
+						width: $size;
+						height: $size;
+					}
 				}
 			}
 		}

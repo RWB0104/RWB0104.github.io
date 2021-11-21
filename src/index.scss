@@ -22,6 +22,14 @@ button.icon-button {
 
 main {
 	& > section {
-		min-height: calc(100vh - 223px);
+		min-height: calc(100vh - 153px);
+	}
+}
+
+@media (max-width: 1024px) {
+	main {
+		& > section {
+			min-height: calc(100vh - 152px);
+		}
 	}
 }
