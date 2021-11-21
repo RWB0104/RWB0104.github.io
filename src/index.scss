@@ -9,3 +9,19 @@
 
 	font-family: 'AppleSDGothicNeo', sans-serif;
 }
+
+button.icon-button {
+	display: flex;
+	gap: 10px;
+
+	cursor: pointer;
+
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	& > section {
+		min-height: calc(100vh - 223px);
+	}
+}

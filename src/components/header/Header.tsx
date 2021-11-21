@@ -21,7 +21,7 @@ export default function Header(): ReactElement
 	return (
 		<header>
 			<div className="info">
-				<img alt="logo" src="https://via.placeholder.com/150" />
+				<img alt="logo" src="/logo.png" />
 				<h1>𝝅번째 알파카의 와장창창 개발 연구소</h1>
 			</div>
 
