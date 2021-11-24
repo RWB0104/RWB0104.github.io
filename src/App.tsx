@@ -9,9 +9,10 @@ import React, { ReactElement, useEffect } from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import GuestBook from './pages/GuestBook';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import { useRecoilState, useSetRecoilState } from 'recoil';
+import { useSetRecoilState } from 'recoil';
 import { topAtom } from './global/state';
 
 /**
@@ -21,29 +22,31 @@ import { topAtom } from './global/state';
  */
 export default function App(): ReactElement
 {
-	const [topState, setTopState] = useRecoilState(topAtom);
+	const setTopState = useSetRecoilState(topAtom);
 
 	useEffect(() =>
 	{
+		// 문서가 유효할 경우
 		if (document)
 		{
 			document.addEventListener('scroll', () =>
 			{
 				const header = document.querySelector('header');
 
+				// 헤더가 유효할 경우
 				if (header)
 				{
-					const isTop = header.getAttribute('data-top');
+					const isTop = header.getAttribute('data-top') === 'true';
 
-					if (window.scrollY === 0 && isTop === 'false')
+					// 스크롤이 맨 위고, isTop이 false일 경우
+					if (window.scrollY === 0 && !isTop)
 					{
-						console.dir(`1111111111111111111111111111111 : ${window.scrollY !== 0 && topState}`);
 						setTopState(true);
 					}
 
-					else if (window.scrollY !== 0 && isTop === 'true')
+					// 스크롤이 맨 위고, isTop이 true일 경우
+					else if (window.scrollY !== 0 && isTop)
 					{
-						console.dir(`22222222222222222222222222222 : ${window.scrollY > 0 && isTop}`);
 						setTopState(false);
 					}
 				}
@@ -51,13 +54,15 @@ export default function App(): ReactElement
 			});
 		}
 	});
+
 	return (
 		<BrowserRouter>
 			<Header />
 
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/projects" element={<Projects />} />
+				<Route path="/projects/" element={<Projects />} />
+				<Route path="/guestbook/" element={<GuestBook />} />
 			</Routes>
 
 			<Footer />

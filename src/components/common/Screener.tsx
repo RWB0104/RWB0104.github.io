@@ -6,21 +6,36 @@
  */
 
 import { ReactElement } from 'react';
+import { DESCRIPTION } from '../../global/variables';
 import './Screener.scss';
 
-export default function Screener(): ReactElement
+interface Props {
+	menu?: string,
+	description?: string
+}
+
+/**
+ * 스크리너 컴포넌트 ReactElement 반환 메서드
+ *
+ * @param {Props} props: 프로퍼티
+ *
+ * @returns {ReactElement} 컴포넌트 ReactElement
+ */
+export default function Screener({ menu, description }: Props): ReactElement
 {
 	return (
 		<div id="screener">
 			<div className="screen">
-				<video src="https://blog.itcode.dev/img/screener/celeb1.webm" autoPlay muted loop />
+				<video src="https://blog.itcode.dev/img/screener/celeb1.web" autoPlay muted loop />
 			</div>
 
 			<div className="prompt">
-				<h3>내용</h3>
-				<p>dfas</p>
-				<p>dfas</p>
-				<p>dfas</p>
+				<div>
+					<h3>{DESCRIPTION}</h3>
+
+					{menu && <p><span>{menu}</span></p>}
+					{description && <p>{description}</p>}
+				</div>
 			</div>
 		</div>
 	);

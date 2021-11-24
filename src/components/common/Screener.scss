@@ -11,7 +11,7 @@
 	}
 
 	& > .screen {
-		background-color: black;
+		background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
 
 		& > video {
 			width: 100%;
@@ -27,14 +27,53 @@
 		justify-content: center;
 		align-items: center;
 
-		color: white;
+		background-color: rgba($color: #000000, $alpha: 0.6);
+		box-sizing: border-box;
 
-		& > p {
-			font-size: 24px;
-			padding: 20px;
-			background-color: rgba($color: #000000, $alpha: 0.6);
-		}
+		padding: 20px;
+
+		color: white;
+		text-shadow: 3px 3px 3px black;
 
 		z-index: 2;
+
+		& > div {
+			border-left: 5px solid white;
+			padding: 0px 20px;
+			word-break: keep-all;
+
+			& > h3 {
+				font-size: 40px;
+			}
+
+			& > p {
+				font-size: 30px;
+
+				& > span {
+					color: gold;
+				}
+
+				&:nth-child(2) {
+					margin-top: 30px;
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	#screener {
+		& > .prompt {
+			& > div {
+				& > h3 {
+					font-size: 24px;
+				}
+
+				& > p {
+					font-size: 18px;
+				}
+			}
+		}
 	}
 }

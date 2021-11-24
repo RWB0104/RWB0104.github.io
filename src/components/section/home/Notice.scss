@@ -1,0 +1,115 @@
+article[data-article=notice] {
+	padding: 50px;
+
+	display: flex;
+	justify-content: center;
+
+	& > div[data-notice=wrapper] {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+
+		width: 1024px;
+
+		& > div {
+			text-align: center;
+
+			&[data-notice=title] {
+				svg {
+					width: 128px;
+
+					color: #EF5350;
+				}
+			}
+
+			&[data-notice=category] {
+				display: flex;
+
+				.item {
+					width: 33%;
+					padding: 40px;
+					box-sizing: border-box;
+
+					svg {
+						width: 128px;
+
+						color: grey;
+
+						transition: 0.5s;
+					}
+
+					& > div {
+						padding: 20px;
+
+						&:first-child {
+							border-bottom: 1px dashed grey;
+						}
+
+						&:last-child {
+
+						}
+					}
+
+					&:hover {
+						svg {
+							color: #EF5350;
+
+							transition: 0.5s;
+						}
+					}
+
+					&:not(:nth-child(3n)) {
+						border-right: 1px solid gainsboro;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	article[data-article=notice] {
+		& > div[data-notice=wrapper] {
+			& > div[data-notice=category] {
+				flex-direction: column;
+
+				.item {
+					width: 100%;
+					padding: 20px;
+
+					svg {
+						width: 128px;
+
+						color: grey;
+
+						transition: 0.5s;
+					}
+
+					& > div {
+						padding: 20px;
+
+						&:first-child {
+							border-bottom: 1px dashed grey;
+						}
+
+						&:last-child {
+
+						}
+					}
+
+					&:hover {
+						svg {
+							color: #EF5350;
+
+							transition: 0.5s;
+						}
+					}
+
+					&:not(:nth-child(3n)) {
+						border-right: initial;
+					}
+				}
+			}
+		}
+	}
+}

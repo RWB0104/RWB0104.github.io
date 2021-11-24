@@ -6,7 +6,13 @@
  */
 
 import { ReactElement } from 'react';
+import Introduce from '../components/section/home/Introduce';
+import Welcome from '../components/section/home/Welcome';
+import Notice from '../components/section/home/Notice';
 import Screener from '../components/common/Screener';
+import { MENU } from '../global/variables';
+
+const { title, subtitle } = MENU[0];
 
 /**
  * 홈 컴포넌트 ReactElement 반환 메서드
@@ -16,8 +22,12 @@ import Screener from '../components/common/Screener';
 export default function Home(): ReactElement
 {
 	return (
-		<section data-section="home">
-			<Screener />
+		<section data-section={title.toLowerCase()}>
+			<Screener menu={title} description={subtitle} />
+
+			<Introduce />
+			<Welcome />
+			<Notice />
 		</section>
 	);
 }
