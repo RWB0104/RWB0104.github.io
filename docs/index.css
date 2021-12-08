@@ -1,0 +1,51 @@
+@font-face {
+	font-family: "AppleSDGothicNeo";
+	src: url("/fonts/apple/AppleSDGothicNeoM.woff2") format("woff2"),
+		url("/fonts/apple/AppleSDGothicNeoM.woff") format("woff")
+}
+
+* {
+	user-select: none;
+
+	font-family: AppleSDGothicNeo, sans-serif;
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+
+	background-color: #0D1117;
+
+	color: white;
+}
+
+main > section {
+	position: relative;
+}
+
+main > section > div[data-div=image] > img {
+	width: 512px;
+}
+
+main > section > div[data-div=text] {
+	position: absolute;
+
+	bottom: 6px;
+	width: 100%;
+
+	background: #000000AA
+}
+
+main > section > div[data-div=text] > h1 {
+
+	text-align: center;
+}
