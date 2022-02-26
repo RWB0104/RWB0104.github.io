@@ -15,9 +15,37 @@
 	</url>
 
 	<url>
+		<loc>https://project.itcode.dev/klid/list/</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-11-09T15:10:13.788Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/klid/statistics/</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-11-09T15:10:13.788Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/klid/report/</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-11-09T15:10:13.788Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
 		<loc>https://project.itcode.dev/oauth2/</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-11-09T15:10:13.788Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/kakaostyle/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-02-26T01:47:14.784Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
 </urlset>
