@@ -48,4 +48,123 @@
 		<lastmod>2022-02-26T01:47:14.784Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/osm/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/vworld/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/map-info/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/geolocation/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/feature/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/feature/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/wfs/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/wms/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/feature-click/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/wfs-popup/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/wms-popup/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/transaction-insert/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/transaction-update/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/transaction-delete/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/cluster-map/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/gis-dev/heat-map/</loc>
+		<priority>1.0</priority>
+		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
 </urlset>
