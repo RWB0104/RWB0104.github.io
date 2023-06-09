@@ -1,8 +1,8 @@
 {
-  "name": "root",
+  "name": "project.itcode.dev",
   "version": "1.0.0",
   "private": true,
-  "description": "root",
+  "description": "project.itcode.dev",
   "author": "박성진",
   "keywords": [
     "gatsby"
