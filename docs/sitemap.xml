@@ -167,4 +167,18 @@
 		<lastmod>2022-03-05T02:06:53.205Z</lastmod>
 		<changefreq>always</changefreq>
 	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/jader</loc>
+		<priority>1.0</priority>
+		<lastmod>2023-70-30T00:00:00.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+
+	<url>
+		<loc>https://project.itcode.dev/piedit</loc>
+		<priority>1.0</priority>
+		<lastmod>2023-09-07T00:00:00.000Z</lastmod>
+		<changefreq>always</changefreq>
+	</url>
 </urlset>
