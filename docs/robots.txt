@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://project.itcode.dev
+Sitemap: https://project.itcode.dev/sitemap.xml
